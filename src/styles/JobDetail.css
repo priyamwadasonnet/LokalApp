@@ -1,0 +1,91 @@
+.job-detail-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+/* Light & Dark Mode Support */
+.job-detail {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background: #f9f9f9;
+    color: black;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    .job-detail {
+        background: #222;  /* Dark background */
+        color: white;       /* Light text */
+        border: 1px solid #444;
+    }
+}
+
+/* Header color */
+.job-detail h2 {
+    color: #007bff;
+}
+
+/* Back Button */
+.back-button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.back-button:hover {
+    background: #0056b3;
+}
+
+/* Job Buttons */
+.job-buttons {
+    display: flex;
+    gap: 10px;  /* ✅ Adds spacing between buttons */
+    align-items: center; /* ✅ Aligns buttons properly */
+}
+
+/* Bookmark & Details Buttons */
+.bookmark-btn, .details-btn {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+}
+
+/* Bookmark Button */
+.bookmark-btn {
+    background-color: gold;
+    color: black;
+}
+
+.bookmark-btn.bookmarked {
+    background-color: gold;
+    color: black;
+}
+
+.bookmark-btn:hover {
+    opacity: 0.9;
+}
+
+/* View Details Button */
+.details-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.details-btn:hover {
+    background-color: #0056b3;
+}
